@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    border-bottom: 8px solid green;
+}
+section h1{
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+}
+section img{
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: -280px;
+    max-height: 300px;
+    animation: marioAndando 3s linear;
+}
+section span{
+    opacity: 1;
+    animation: pontos 2s linear infinite alternate;
+}
+section span:nth-child(1){
+    animation-delay: -0.4s;
+}
+section span:nth-child(2){
+    animation-delay: -0.2s;
+
+}
+
+@keyframes pontos{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes marioAndando{
+    from{
+        left: -280px;
+    }
+    to{
+        left: 100%;
+    }
+}

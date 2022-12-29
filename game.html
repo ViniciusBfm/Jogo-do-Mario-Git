@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mario</title>
+    <link href="css/game.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/>
+    <link rel="shortcut icon" type="image-x/png" href="novo.ico">
+    <!--Orbtron-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!---->
+  </head>
+  <body>
+    <div class="game-board">
+        
+        <img class="clouds" src="clouds.png" alt="">
+        <img class="mario" src="mario.gif" alt="">
+        <img class="pipe" src="bomba.png" alt="">
+        <div>
+            <img class="perdeu" src="perdeu.png" alt="">
+            <div class="botoes">
+                <button onclick="returnMenu()" class="return">Return</button>
+                <button onclick="start()" class="start">Play Again</button>
+            </div>
+        </div>
+        <div class="tempo">
+            <div>
+                <span>Tempo: </span><span class="timer">0</span><span>s</span>
+            </div>
+            <div>
+                <span>Jogador: </span>
+                <span class="namePlayer">joão</span>
+            </div>
+            
+        </div>
+    </div>
+ 
+  </body>
+  <script src="game.js"></script>
+</html>
